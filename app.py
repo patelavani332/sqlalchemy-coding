@@ -65,7 +65,7 @@ def stations():
      # json representation of dictionary
     return jsonify(stations = stations)
 
-@app.route("/api.v1.0/tobs")
+@app.route("/api/v1.0/tobs")
 def temp_monthly():
     # Observaton of most active station of previous year
     previous_year_date = dt.date(2017, 8, 23) - dt.timedelta(days = 365)
